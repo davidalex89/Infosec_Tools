@@ -18,7 +18,7 @@ with ISC BIND 9.8.
 leveraging reputation feeds.
 * Can block or redirect internal traffic associated with
 malicious activity (yes, just like OpenDNS).
-
+ 
 ## Fun with Wifi
 * Kismet
 – An open source WIDS that works with any wireless devices
