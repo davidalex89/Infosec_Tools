@@ -21,6 +21,7 @@ A categorized reference of security tools — open source, free, and commercial 
 - [Vulnerability Scanning & Management](#vulnerability-scanning--management)
 - [Cloud & Container Security](#cloud--container-security)
 - [Threat Intelligence](#threat-intelligence)
+- [AI & Machine Learning for Security](#ai--machine-learning-for-security)
 - [Browser Extensions](#browser-extensions)
 - [Open Source vs. Commercial](#open-source-vs-commercial)
 
@@ -38,6 +39,8 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[Censys](https://search.censys.io)** — Internet-wide scan data, certificates, and host intelligence. *(Freemium)*
 - **[OSINT Framework](https://osintframework.com)** — Web-based directory of OSINT resources by category. *(Free)*
 - **[Photon](https://github.com/s0md3v/Photon)** — Fast crawler designed for OSINT. *(Open source)*
+- **[httpx](https://github.com/projectdiscovery/httpx)** — Fast HTTP probing and technology fingerprinting across large host lists. *(Open source — ProjectDiscovery)*
+- **[dnsx](https://github.com/projectdiscovery/dnsx)** — High-speed DNS toolkit for resolution, wildcard detection, and record enumeration. *(Open source — ProjectDiscovery)*
 
 ---
 
@@ -115,6 +118,7 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[Security Onion](https://securityonionsolutions.com)** — Linux distro and platform built for threat hunting and NSM, integrating Zeek, Suricata, and Elastic. *(Open source)*
 - **[RITA](https://github.com/activecm/rita)** — Real Intelligence Threat Analytics — analyzes Zeek logs for C2 beaconing and other threats. *(Open source)*
 - **[NetworkMiner](https://www.netresec.com/?page=NetworkMiner)** — Passive network sniffer and PCAP analyzer. *(Free / commercial)*
+- **[Arkime](https://arkime.com)** — Large-scale PCAP indexing and session search (formerly Moloch). *(Open source)*
 
 ---
 
@@ -126,7 +130,8 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[OpenSearch Security Analytics](https://opensearch.org/docs/latest/security-analytics)** — AWS-backed Elasticsearch fork with security analytics capabilities. *(Open source)*
 - **[Splunk](https://www.splunk.com)** — Enterprise SIEM/observability platform. Industry standard but expensive. *(Commercial)*
 - **[Microsoft Sentinel](https://azure.microsoft.com/en-us/products/microsoft-sentinel)** — Cloud-native SIEM/SOAR on Azure. *(Commercial / consumption-based)*
-- **[Velociraptor](https://www.rapid7.com/products/velociraptor)** — Digital forensics and incident response platform with live query capability. *(Open source)*
+- **[Shuffle](https://shuffler.io)** — Open source SOAR for playbook automation; pairs with SIEMs for alert triage and response. *(Open source)*
+- **[osquery](https://osquery.io)** — SQL-powered endpoint visibility; query running processes, sockets, and configs across fleets. *(Open source — Meta)*
 
 ---
 
@@ -141,6 +146,8 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[CyberChef](https://github.com/gchq/CyberChef)** — Browser-based data transformation and analysis "Swiss army knife" from GCHQ. *(Open source)*
 - **[Eric Zimmerman Tools (EZ Tools)](https://ericzimmerman.github.io)** — Comprehensive suite of Windows forensics utilities. *(Free)*
 - **[REMnux](https://remnux.org)** — Linux distro for reverse-engineering and malware analysis. *(Free)*
+- **[DFIR-ORC](https://github.com/DFIR-ORC/dfir-orc)** — Collects forensic artifacts at scale on Windows endpoints. *(Open source)*
+- **[Timesketch](https://github.com/google/timesketch)** — Collaborative timeline analysis for incident response and threat hunting. *(Open source — Google)*
 
 ---
 
@@ -167,6 +174,8 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[Nuclei](https://github.com/projectdiscovery/nuclei)** — Fast, template-based vulnerability scanner with massive community library. *(Open source)*
 - **[Faraday](https://www.faradaysec.com)** — Collaborative vulnerability management platform. *(Open source / commercial)*
 - **[DefectDojo](https://www.defectdojo.com)** — Open source DevSecOps vulnerability management. *(Open source)*
+- **[Vulncheck](https://vulncheck.com)** — Exploit intelligence and KEV/XDB feeds beyond public CISA data. *(Commercial / API)*
+- **[Dependency-Track](https://dependencytrack.org)** — SBOM analysis and continuous monitoring for third-party component risk. *(Open source — OWASP)*
 
 ---
 
@@ -193,6 +202,38 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[SIGMA](https://github.com/SigmaHQ/sigma)** — Generic signature format for SIEM rules — write once, use anywhere. *(Open source)*
 - **[STIX / TAXII](https://oasis-open.github.io/cti-documentation)** — Structured Threat Information Expression and sharing protocol standards. *(Open standard)*
 - **[Abuse.ch](https://abuse.ch)** — Free threat intelligence feeds: MalwareBazaar, URLhaus, ThreatFox, Feodo Tracker. *(Free)*
+- **[MITRE ATT&CK](https://attack.mitre.org)** — Adversary tactics, techniques, and procedures framework used across detection engineering. *(Open standard)*
+- **[OpenSanctions](https://www.opensanctions.org)** — Consolidated sanctions, PEP, and watchlist data for screening and enrichment. *(Open source / API)*
+
+---
+
+## AI & Machine Learning for Security
+
+Practitioner-focused ML/AI — anomaly detection on telemetry, LLM red teaming, and adversarial testing of models. Not a catalog of every data-science library; these are widely cited in security work.
+
+### Anomaly Detection & Security Analytics
+
+- **[PyOD](https://github.com/yzhao062/pyod)** — Python outlier detection toolkit; common starting point for unsupervised anomaly scoring on logs and metrics. *(Open source)*
+- **[Kitsune](https://github.com/ymirsky/Kitsune-py)** — Online network anomaly detection via an ensemble of autoencoders on packet features. *(Open source — research)*
+- **[Elastic Machine Learning](https://www.elastic.co/guide/en/machine-learning/current/ml-ad-overview.html)** — Built-in time-series anomaly detection and UEBA-style jobs in the Elastic Stack. *(Open source core / commercial)*
+
+### LLM Security & Red Teaming
+
+- **[Garak](https://github.com/NVIDIA/garak)** — LLM vulnerability scanner and probe harness; checks for jailbreaks, prompt injection, and data leakage patterns. *(Open source — NVIDIA)*
+- **[Promptfoo](https://github.com/promptfoo/promptfoo)** — Repeatable LLM evaluation and red-team test suites with CI-friendly workflows. *(Open source)*
+- **[LLM Guard](https://github.com/protectai/llm-guard)** — Input/output scanners for PII, injection, toxicity, and other policy violations in LLM pipelines. *(Open source — Protect AI)*
+
+### Adversarial ML & Model Security
+
+- **[Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox)** — IBM's library for evasion, poisoning, extraction, and inference attacks against ML models. *(Open source — Linux Foundation)*
+- **[Counterfit](https://github.com/Azure/counterfit)** — Microsoft's CLI for automated adversarial attack campaigns against deployed ML endpoints. *(Open source)*
+- **[TextAttack](https://github.com/QData/TextAttack)** — Framework for adversarial attacks on NLP models; useful for testing classifier robustness. *(Open source)*
+
+### Malware & Binary ML
+
+- **[EMBER](https://github.com/elastic/ember)** — Open malware classifier benchmark and feature set from Elastic; de facto reference for PE static analysis ML. *(Open source — Elastic)*
+- **[MalwareBazaar](https://bazaar.abuse.ch)** — Abuse.ch malware sample feed frequently used as labeled data for classification research. *(Free)*
+- **[Capa](https://github.com/mandiant/capa)** — Mandiant's capability extractor; rules-based but pairs well with ML pipelines for feature engineering. *(Open source — Google/Mandiant)*
 
 ---
 
@@ -229,3 +270,5 @@ Worth knowing that for most capabilities, open source tools match or exceed thei
 | Cloud Security Audit | Prowler, ScoutSuite | Wiz, Prisma Cloud |
 | Log Management | Graylog, ELK | Splunk |
 | Threat Intelligence | MISP, OpenCTI | Recorded Future, ThreatConnect |
+| LLM Red Teaming | Garak, Promptfoo | HiddenLayer, Robust Intelligence |
+| Anomaly Detection | PyOD, Elastic ML | Darktrace, Vectra |
