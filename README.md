@@ -67,6 +67,7 @@ A categorized reference of security tools — open source, free, and commercial 
 - **[Caido](https://caido.io)** — Modern web security testing platform, gaining traction as a Burp alternative. *(Freemium)*
 - **[Wfuzz](https://github.com/xmendez/wfuzz)** — Web application fuzzer for brute-forcing parameters, auth, and more. *(Open source)*
 - **[Arjun](https://github.com/s0md3v/Arjun)** — HTTP parameter discovery tool. *(Open source)*
+- **[Darkmoon](https://github.com/ASCIT31/Dark-Moon)** — Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes. *(Open source)*
 - **[Dalfox](https://github.com/hahwul/dalfox)** — Fast XSS scanner and parameter analysis tool. *(Open source)*
 
 ---
